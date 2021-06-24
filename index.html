@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zip Code Api</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" crossorigin="anonymous">
+    
+    <style>
+        .icon-remove,.icon-check{
+            display: none;
+        }
+        .location{
+            color: black !important;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="hero hero-body is-dark">
+        <div class="container" style="width: 1140px;">
+            <h1 class="title">US Location Info</h1>
+            <h2 class="subtitle">Enter a zipcode to get location info</h2>
+            
+            <form id="zipform">
+                <div class="field">
+                    <p class="control has-icons-left has-icons-right">
+
+                      <input class="input zip is-large" type="text" placeholder="Enter Zipcode">
+
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-map-pin"></i>
+                      </span>
+
+                      <span class="icon is-small is-right icon-check">
+                        <i class="fas fa-check"></i>
+                      </span>
+
+                      <span class="icon is-small is-right icon-remove">
+                        <i class="fas fa-times"></i>
+                      </span>
+                    </p>
+                  </div>
+
+            </form>
+        </div>
+    </section>
+
+    <br>
+
+    <div class="container">
+        <div id="output"></div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
